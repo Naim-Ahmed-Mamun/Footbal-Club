@@ -57,6 +57,9 @@
     .header .container{
         padding: 0px;
     }
+    .hero_text {
+        padding-left: 15px;
+    }
     .hero_text h2 {
         font-size: 45px;
         line-height: 60px;
@@ -99,6 +102,9 @@
 @media (min-width:577px) and (max-width:768px){
     .header .container{
         padding: 0px;
+    }
+    .hero_text {
+        padding-left: 15px;
     }
     .hero_text h2 {
         font-size: 35px;
@@ -144,6 +150,7 @@
     }
     .hero_text {
         padding-top: 130px;
+        padding-left: 15px;
     }
     .hero_img{
         padding-top: 40px;
@@ -220,7 +227,7 @@
 }
 
 /* ------mobile small device--------- */
-@media (max-width:350px) {
+@media (max-width:355px) {
     .hero_text h2 {
         font-size: 36px;
         line-height: 50px;
