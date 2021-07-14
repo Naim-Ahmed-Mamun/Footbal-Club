@@ -237,7 +237,7 @@ label #cancel{
 .news_details p {
     font-size: 16px;
     color: var(--paragraph-color);
-    height: 300px;
+    height: 250px;
     text-align: justify;
 }
 /* -----------news section end--------- */
