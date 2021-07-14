@@ -1,0 +1,315 @@
+/* ----global css start---------- */
+:root{
+    --main-bg:#2D25A0;
+    --white-color:#fff;
+    --black-color:#000;
+    --heading-color:#18191F;
+    --heading-color2:#0A0826;
+    --paragraph-color:#6C6C6C;
+    --btn-bg:#E02C6D;
+    --icon-color:#969BAB;
+    --icon-bg:#E7E7E8;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+ul{
+    list-style: none;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.btn{
+    padding: 10px 25px;
+    background-color: var(--btn-bg);
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+}
+/* ----global css end---------- */
+
+/* ----------header start----------- */
+.header{
+    background-color: var(--main-bg);
+}
+
+/* -----navbar start--------- */
+label #btn,
+label #cancel{
+    color: var(--white-color);
+    font-size: 30px;
+    line-height: 80px;
+    cursor: pointer;
+    position: fixed;
+    left: 15px;
+    display: none;
+    z-index: 1000;
+}
+#check{
+    display: none;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    /* background-color: aqua; */
+}
+.menu_items li{
+    display: inline-block;
+    margin-right: 36px;
+}
+.menu_items li:last-child{
+    margin-right: 0px;
+}
+.menu_items li a{
+    color: white;
+    font-size: 16px;
+}
+
+/* -----navbar end--------- */
+
+/* ------hero section start----------- */
+.hero_container{
+    display: flex;
+    align-items: center;
+    height: 90vh;
+}
+.hero_text h2{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+    color: white;
+}
+.hero_img{
+    text-align: center;
+}
+.hero_text,.hero_img{
+    flex-basis: 48%;
+}
+.main_btn{
+    margin-top: 27px;
+    display: inline-block;
+}
+.main_btn .btn {
+    display: inline-flex;
+    align-items: center;
+    transition: 0.5s linear;
+}
+.main_btn span,.arrow_icon{
+    transition: 0.5s;
+}
+.main_btn:hover span{
+    transform: translateX(10px);
+}
+.main_btn:hover .arrow_icon{
+    transform: translateX(10px);
+}
+.main_btn .btn i{
+    font-size: 22px;
+    margin-left: 10px;
+}
+.main_img{
+    transition: 0.5s linear;
+}
+.hero_img:hover .main_img{
+    transform: translateY(-15px);
+}
+/* ------hero section end----------- */
+
+/* ----------header end----------- */
+
+
+/* --------------players_section start----------- */
+.players_section{
+    padding: 70px 0 165px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+}
+.player{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+}
+.player_details h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 16px 0 10px;
+    color: var(--heading-color);
+}
+.player_details p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--paragraph-color);
+}
+/* --------------players_section end----------- */
+
+
+/* -------------highlight section start------- */
+.highlights{
+    padding-bottom: 158px;
+}
+.highlights_container{
+    display: flex;
+}
+.highlight_text,.highlight_img{
+    flex-basis: 48%;
+}
+.highlight_text h2{
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--heading-color2);
+    margin-bottom: 8px;
+}
+.highlight_text p{
+    color: var(--paragraph-color);
+    margin-bottom: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    max-width: 400px;
+}
+/* -------------highlight section end------- */
+
+/* -----------news section start--------- */
+.news_section{
+    padding-bottom: 150px;
+}
+.news_items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 25px;
+}
+.sec_title {
+    text-align: center;
+    font-size: 28px;
+    position: relative;
+    left: 50%;
+    display: inline-block;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.sec_title::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background:var(--btn-bg);
+}
+.news_img img{
+    height: 350px;
+}
+.news_details h3{
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--heading-color);
+    margin: 16px 0 10px;
+}
+.news_details p {
+    font-size: 16px;
+    color: var(--paragraph-color);
+    height: 300px;
+    text-align: justify;
+}
+/* -----------news section end--------- */
+
+/* -----------subscribe section start------ */
+.subscribe_section{
+    /* max-width: 800px; */
+    margin: 0 auto;
+    background-color: var(--btn-bg);
+    text-align: center;
+    padding: 30px 0;
+    margin-bottom: 100px;
+    border-radius: 10px;
+}
+.subscribe_content h3{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--white-color);
+    margin-bottom: 10px;
+}
+.subscribe_content p{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--white-color);
+    margin-bottom: 25px;
+}
+.subs_input_box{
+    margin-top: 30px;
+    margin-left: 100px;
+}
+.subs_input_box input {
+    padding: 10px 15px;
+    border: none;
+    width: 340px;
+    border-radius: 8px;
+}
+.subs_input_box input:focus{
+    outline: none;
+}
+.subs_input_box button {
+    padding: 10px 15px;
+    border: none;
+    position: relative;
+    left: -7.8%;
+    background: red;
+    color: var(--white-color);
+    cursor: pointer;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/* -----------subscribe section end------ */
+
+/* ---------footer section start----------- */
+.footer_items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.socials_links{
+    margin: 20px 0;
+}
+.socials_links .social{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--icon-bg);
+    text-align: center;
+    margin-right: 14px;
+}
+.socials_links .social:last-child{
+    margin-right: 0px; 
+}
+.socials_links .social i{
+    color: var(--icon-color);
+    font-size: 18px;
+    line-height: 40px;
+}
+.copyright_text{
+    margin-bottom: 63px;
+}
+/* ---------footer section end----------- */
