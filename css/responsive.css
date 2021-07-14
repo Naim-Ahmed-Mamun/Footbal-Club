@@ -87,9 +87,7 @@
     .news_details h3 {
         font-size: 17px;
     }
-    .news_details p {
-        height: auto;
-    }
+    
     .news_details a {
         display: inline-block;
         margin-top: 20px;
@@ -133,9 +131,7 @@
     .news_details h3 {
         font-size: 17px;
     }
-    .news_details p {
-        height: auto;
-    }
+   
     .news_details a {
         display: inline-block;
         margin-top: 20px;
@@ -201,7 +197,6 @@
     }
     .news_details p {
         font-size: 14px;
-        height: auto;
         margin-bottom: 20px;
     }
     .news_items{
