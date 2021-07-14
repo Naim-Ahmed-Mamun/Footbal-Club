@@ -160,6 +160,15 @@ label #cancel{
     font-weight: 400;
     color: var(--paragraph-color);
 }
+.player_img{
+    overflow: hidden;
+}
+.player_img img{
+    transition: 0.5s;
+}
+.player_img:hover img{
+    transform: scale(1.2);
+}
 /* --------------players_section end----------- */
 
 
@@ -265,7 +274,7 @@ label #cancel{
 .subs_input_box input {
     padding: 10px 15px;
     border: none;
-    width: 340px;
+    width: 250px;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
 }
@@ -281,7 +290,9 @@ label #cancel{
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
 }
-
+.subs_input_box button:focus{
+    outline: none;
+}
 /* -----------subscribe section end------ */
 
 /* ---------footer section start----------- */
