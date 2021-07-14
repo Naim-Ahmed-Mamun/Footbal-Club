@@ -152,7 +152,9 @@
         padding-top: 120px;
         padding-left: 15px;
     }
-    
+    .hero_img{
+        padding-top: 10px;
+    }
     .hero_img img{
         height: 300px;
     }
